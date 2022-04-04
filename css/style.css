@@ -1,0 +1,103 @@
+/* resetting css  */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* to check weather the file is working or not */
+  /* background-color: red;  */
+}
+
+/* navigation bar  */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: black;
+  height: 10vh;
+}
+
+#navbar-vedio {
+  width: 100vw;
+  height: 85vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 10vh;
+  bottom: 0;
+  z-index: -1;
+}
+#leftnav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+#rightnav {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* vedio panel  */
+#videopanel {
+  height: 85vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 37vw;
+  padding: 0px 54px;
+  font-size: 2.3rem;
+}
+/* logo and images  */
+#logo {
+  /* border: 2px solid black; */
+  margin: 4px 9px;
+}
+#logo img {
+  height: 35px;
+  width: 44px;
+}
+
+/* navigation bar styling  */
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+}
+#navbar ul li a {
+  display: block;
+  color: white;
+  font-style: none;
+  text-decoration: none;
+  margin: 0px 9px;
+  padding: 24px 2px;
+  font-size: 1.1rem;
+  transition-property: all;
+  transition-duration: 0.10s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.05s;
+}
+#navbar ul li a:hover {
+  color: gray;
+  
+}
+#rightnav ul li a {
+  border: 2px solid #fffc00;
+  color: #fffc00;
+  border-radius: 24px;
+  padding: 4px 19px;
+  margin: 0px 37px;
+}
+#rightnav ul li a:hover {
+  border: 2px solid #fffc00;
+  color: #000000;
+  background-color: #fffc00;
+  border-radius: 24px;
+  padding: 4px 19px;
+}
