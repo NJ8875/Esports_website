@@ -14,6 +14,19 @@ body {
 }
 
 /* navigation bar  */
+/* code to make navbar sticky  */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* this padding is givent tho mstop the sudden scrilling of sticky navbar */
+.content {
+  padding: 16px;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
 #navbar {
   display: flex;
   align-items: center;
@@ -21,6 +34,7 @@ body {
   background-color: black;
   height: 10vh;
   width: 100%;
+  z-index: 1;
 }
 
 
@@ -113,17 +127,18 @@ body {
 /* events panel   */
 #events{
   width: 100%;
-  height:85vh;
+  height:187vh;
   
   background-color: black;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  padding-bottom: 10%;
   
 }
-#events .eventlist {
+/* .eventlist {
   height: 85%;
   width: 100%;
-  /* border: 2px solid white */
-}
+  border: 8px solid yellow
+} */
 
 
 #events h1 {
@@ -134,10 +149,10 @@ body {
     /* border: 2px solid yellow; */
     
 }
-
+ /* code for upcoming events  */
 #events .upcomingevents{
   width: 100%;
-  height:90%;
+  height:50%;
   /* background-color: red; */
   /* border: 2px solid green; */
   display: flex;
@@ -151,8 +166,8 @@ body {
   position: absolute;
   display: inline;
   color: white;
-  font-size: 1rem;
-  left: 3%;
+  font-size: 1.4rem;
+  left: 13%;
   margin: 14px;
 }
 
@@ -167,7 +182,7 @@ body {
   align-items: center;
   flex-direction: column;
  
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
 }
 
 /* Hide the images by default */
@@ -176,7 +191,7 @@ body {
   
   top: 41px;
   height: 80%;
-  width: 68%;
+  width: 75%;
  
   /* border: 8px solid pink; */
   position: absolute;
@@ -226,7 +241,7 @@ body {
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   text-align: center;
 }
 
@@ -237,7 +252,7 @@ body {
   padding: 8px 12px;
   position: absolute;
   top: 0;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 
@@ -258,24 +273,69 @@ body {
   to {opacity: 1}
 }
 
-
-
-
-
-
-
-
-
-/* code to make navbar sticky  */
-.sticky {
-  position: fixed;
-  top: 0;
+/* code for previous events  */
+.previousevents{
   width: 100%;
+  height:50%;
+  /* background-color: red; */
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 2px;
 }
-/* this padding is givent tho mstop the sudden scrilling of sticky navbar */
-.content {
-  padding: 16px;
+
+
+.mySlides1 {
+  
+  
+  top: 52px;
+  height: 90%;
+  width: 75%;
+  
+ 
+  /* border: 8px solid pink; */
+  position: absolute;
 }
-.sticky + .content {
-  padding-top: 60px;
+
+
+.mySlides1 img{
+  width: 100%;
+  height: 100%;
+  
 }
+
+.mySlides ,.mySlides1{
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in;
+  
+}
+
+.mySlides1:hover , .mySlides:hover{
+  border: 2px solid yellow;
+  border-radius: 6px;
+}
+
+/* contact us section  */
+
+#contactus{
+  width: 100%;
+  height: 89vh;
+  background-color: black;
+  border: 2px solid white;
+  /* to be removed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+
+}
+
+
+
+
+
+
+
