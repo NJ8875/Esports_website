@@ -1,56 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+
 /* resetting css  */
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing:border-box
 }
 
 body {
   /* to check weather the file is working or not */
   /* background-color: red;  */
+  font-family: Graphik,Avenir Next,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 /* navigation bar  */
 #navbar {
   display: flex;
   align-items: center;
-  position: relative;
+  position: sticky;
   background-color: black;
   height: 10vh;
+  width: 100%;
 }
 
-#navbar-vedio {
-  width: 100vw;
-  height: 85vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 10vh;
-  bottom: 0;
-  z-index: -1;
-}
+
 #leftnav {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    margin-left: 14%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-left: 14%;
 }
 #rightnav {
   width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-/* vedio panel  */
-#videopanel {
-  height: 85vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 37vw;
-  padding: 0px 54px;
-  font-size: 2.3rem;
 }
 /* logo and images  */
 #logo {
@@ -79,13 +63,12 @@ body {
   padding: 24px 2px;
   font-size: 1.1rem;
   transition-property: all;
-  transition-duration: 0.10s;
+  transition-duration: 0.1s;
   transition-timing-function: ease-in;
   transition-delay: 0.05s;
 }
 #navbar ul li a:hover {
   color: gray;
-  
 }
 #rightnav ul li a {
   border: 2px solid #fffc00;
@@ -100,4 +83,199 @@ body {
   background-color: #fffc00;
   border-radius: 24px;
   padding: 4px 19px;
+}
+
+/* Home panel   */
+#home-vedio {
+  width: 100%;
+  height: 86%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 9%;
+  bottom: 0;
+  z-index: -1;
+}
+#Home {
+  height: 83vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45vw;
+  padding: 0px 54px;
+  font-size: 2.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* events panel   */
+#events{
+  width: 100%;
+  height:85vh;
+  
+  background-color: black;
+  border: 2px solid blue;
+  
+}
+#events .eventlist {
+  height: 85%;
+  width: 100%;
+  /* border: 2px solid white */
+}
+
+
+#events h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding-top: 33px;
+    /* border: 2px solid yellow; */
+    
+}
+
+#events .upcomingevents{
+  width: 100%;
+  height:90%;
+  /* background-color: red; */
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 2px;
+}
+
+
+.upcoming {
+  position: absolute;
+  display: inline;
+  color: white;
+  font-size: 1rem;
+  left: 3%;
+  margin: 14px;
+}
+
+
+.slideshow-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  position: relative;
+  display: flex;
+  margin: 18px 2px;
+  align-items: center;
+  flex-direction: column;
+ 
+  border: 2px solid purple;
+}
+
+/* Hide the images by default */
+.mySlides {
+  
+  
+  top: 41px;
+  height: 80%;
+  width: 68%;
+ 
+  /* border: 8px solid pink; */
+  position: absolute;
+}
+.mySlides img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  /* border: 2px solid red; */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 8%;
+  
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left:8%;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.177);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  border: 2px solid red;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  border: 2px solid red;
+}
+
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+ 
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+/* code to make navbar sticky  */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* this padding is givent tho mstop the sudden scrilling of sticky navbar */
+.content {
+  padding: 16px;
+}
+.sticky + .content {
+  padding-top: 60px;
 }
